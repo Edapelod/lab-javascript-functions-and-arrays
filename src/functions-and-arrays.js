@@ -1,25 +1,48 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(number1,number2) {
+  if (number1 > number2) {
+    return number1;
+  }
+  if (number1 < number2) {
+    return number2;
+  }
+  else {return number1,number2}
+};
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(pizza) {
+  return pizza.reduce((a,b) => a.length - b.length ? b : a, "")      
+};
 
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  if ( numbers === [] && 0) {
+    console.log(zero)};
+  const initialValue = 0;
+const sumWithInitial = numbers.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+); console.log(initialValue);
+return sumWithInitial;
+}
 
 
 
 // Iteration #3.1 Bonus:
-function sum() {}
-
+function sum(bonus) {
+  if (bonus == [] && 0) {
+    return zero;
+  }
+}
+console.log(bonus)
 
 
 // Iteration #4: Calculate the average
@@ -35,7 +58,13 @@ const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smar
 function averageWordLength() { }
 
 // Bonus - Iteration #4.1
-function avg() {}
+function avg(arravg) {
+  const average = arravg.reduce((a,b) => a + b, 0) / arravg.length;
+  console.log(arravg);
+  if (arravg == []) {
+    console.log(zero)
+  }
+}
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
